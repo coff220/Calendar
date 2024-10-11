@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		132A8B152CB44CCD0001DE27 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132A8B142CB44CCC0001DE27 /* Cell.swift */; };
 		137983732CB1752800982E7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137983722CB1752800982E7D /* AppDelegate.swift */; };
 		137983752CB1752800982E7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137983742CB1752800982E7D /* SceneDelegate.swift */; };
 		137983772CB1752800982E7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137983762CB1752800982E7D /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		132A8B142CB44CCC0001DE27 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		1379836F2CB1752800982E7D /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		137983722CB1752800982E7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		137983742CB1752800982E7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				137983722CB1752800982E7D /* AppDelegate.swift */,
 				137983742CB1752800982E7D /* SceneDelegate.swift */,
 				137983762CB1752800982E7D /* ViewController.swift */,
+				132A8B142CB44CCC0001DE27 /* Cell.swift */,
 				137983782CB1752800982E7D /* Main.storyboard */,
 				1379837B2CB1752D00982E7D /* Assets.xcassets */,
 				1379837D2CB1752D00982E7D /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				137983772CB1752800982E7D /* ViewController.swift in Sources */,
+				132A8B152CB44CCD0001DE27 /* Cell.swift in Sources */,
 				137983732CB1752800982E7D /* AppDelegate.swift in Sources */,
 				137983752CB1752800982E7D /* SceneDelegate.swift in Sources */,
 			);
