@@ -14,7 +14,7 @@ var dateComponents = DateComponents()
 //let dateComponentsNow = calendar.dateComponents([.year,.month,.day], from: todayDate)
 let dateFormatter = DateFormatter()
 
-//var currentYear = dateComponentsN    ow.year
+//var currentYear = dateComponentsN    ow.    year
 
 
 
@@ -26,6 +26,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var previousButton: UIButton!
+  
+  
+  
+  ßß
     @IBOutlet weak var dateCollectionView: UICollectionView!
     
     var currentDate = Date()
