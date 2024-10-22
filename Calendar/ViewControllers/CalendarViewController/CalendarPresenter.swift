@@ -14,6 +14,7 @@ protocol CalendarPresenterProtocol: AnyObject {
     func monthYearText () -> String
     func weekDays() -> [String?]
     func firstWeekDayOfMonth() -> Int 
+    
     var delegate: CalendarViewControllerProtocol? { get set }
 }
 
