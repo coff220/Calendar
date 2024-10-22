@@ -16,21 +16,6 @@ Calendar/.DS_Store
 
 # Swift Package Manager
 .build/
-*.xcodeproj/*
-Calendar/*.xcodeproj/*
-Calendar/*.xcodeproj/xcuserdata/
+# *.xcodeproj/*
 Packages/
 .package.resolved
-
-# CocoaPods
-Pods/
-*.xcworkspace
-
-# Carthage
-Carthage/Build/
-
-# fastlane
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots/**/*.png
-fastlane/test_output/**/*.log
