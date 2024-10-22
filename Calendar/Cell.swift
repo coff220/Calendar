@@ -11,4 +11,10 @@ class Cell: UICollectionViewCell {
     
     @IBOutlet weak var dayLabel: UILabel!
     
+    
+    
 }
+
+
+
+
