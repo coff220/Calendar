@@ -17,6 +17,8 @@ Calendar/.DS_Store
 # Swift Package Manager
 .build/
 *.xcodeproj/*
+Calendar/*.xcodeproj/*
+Calendar/*.xcodeproj/xcuserdata/
 Packages/
 .package.resolved
 
