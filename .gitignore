@@ -1,0 +1,36 @@
+# Xcode
+**/xcuserdata/
+**/xcuserdata/*.xcuserstate
+**/xcuserdata/*.xccheckout
+**/DerivedData/
+**/build/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+*.moved-aside
+*.xcscmblueprint
+.DS_Store
+Calendar/.DS_Store
+
+# Swift Package Manager
+.build/
+*.xcodeproj/*
+Calendar/*.xcodeproj/*
+Calendar/*.xcodeproj/xcuserdata/
+Packages/
+.package.resolved
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/**/*.log
