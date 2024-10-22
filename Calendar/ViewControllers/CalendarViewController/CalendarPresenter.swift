@@ -47,7 +47,7 @@ class CalendarPresenter: CalendarPresenterProtocol {
     
     func weekDays() -> [String?] {
         let shortWeekdays = dateFormatter.shortWeekdaySymbols
-        return shortWeekdays ?? ["1","2","3","4","5","6","7"]
+        return shortWeekdays ?? ["1", "2", "3", "4", "5", "6", "7"]
     }
     
     func firstWeekDayOfMonth() -> Int {

@@ -7,7 +7,10 @@
 
 import UIKit
 
-protocol CalendarViewControllerProtocol: AnyObject {
+
+
+
+protocol CalendarViewControllerProtocol:     AnyObject {
     func reloadData()
 }
 
@@ -22,8 +25,15 @@ class CalendarViewController: UIViewController, CalendarViewControllerProtocol {
     var presenter: CalendarPresenterProtocol = CalendarPresenter()
     
     
+  
+  
+  
     
     func reloadData() {
+      
+      
+      
+      
         dateCollectionView.reloadData()
         monthLabel.text =  presenter.monthYearText()
     }
@@ -59,10 +69,10 @@ class CalendarViewController: UIViewController, CalendarViewControllerProtocol {
         
         monthLabel.text = presenter.monthYearText()
         
-        for i in 0..<presenter.weekDays().count {
-         let label = weekDaysStackView.arrangedSubviews[i] as? UILabel
-            label?.text = presenter.weekDays()[i]
-        }
+//        for i in 0..<presenter.weekDays().count {
+//         let label = weekDaysStackView.arrangedSubviews[i] as? UILabel
+//            label?.text = presenter.weekDays()[i]
+//        }
     }
     
     func backgroundImage() {
@@ -94,26 +104,27 @@ extension CalendarViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! Cell
-        cell.backgroundColor = .lightGray
-        cell.layer.cornerRadius = 15
-        
-        for i in 0 ..< (presenter.firstWeekDayOfMonth() - 1) {
-            if indexPath.row == i {
-                cell.dayLabel.text = ""
-            } else {
-                cell.dayLabel.text = String(indexPath.row - presenter.firstWeekDayOfMonth() + 2)
-            }
-        }
-        
-        return cell
+      return UICollectionViewCell()
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! Cell
+//        cell.backgroundColor = .lightGray
+//        cell.layer.cornerRadius = 15
+//        
+//        for i in 0 ..< (presenter.firstWeekDayOfMonth() - 1) {
+//            if indexPath.row == i {
+//                cell.dayLabel.text = ""
+//            } else {
+//                cell.dayLabel.text = String(indexPath.row - presenter.firstWeekDayOfMonth() + 2)
+//            }
+//        }
+//        
+//        return cell
     }
 }
 
 extension CalendarViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: collectionView.frame.width / 8  , height: collectionView.frame.width / 8)
+        return CGSize(width: collectionView.frame.width / 8, height: collectionView.frame.width / 8)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -124,5 +135,3 @@ extension CalendarViewController: UICollectionViewDelegateFlowLayout {
         return 1
     }
 }
-
-
