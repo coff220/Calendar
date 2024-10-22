@@ -27,9 +27,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var previousButton: UIButton!
   
-  
-  
-  ßß
     @IBOutlet weak var dateCollectionView: UICollectionView!
     
     var currentDate = Date()
