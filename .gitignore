@@ -12,6 +12,7 @@
 *.moved-aside
 *.xcscmblueprint
 .DS_Store
+Calendar/.DS_Store
 
 # Swift Package Manager
 .build/

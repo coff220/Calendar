@@ -14,7 +14,9 @@ var dateComponents = DateComponents()
 //let dateComponentsNow = calendar.dateComponents([.year,.month,.day], from: todayDate)
 let dateFormatter = DateFormatter()
 
-//var currentYear = dateComponentsNow.year
+//var currentYear = dateComponentsN    ow.year
+
+
 
 
 
