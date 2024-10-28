@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		132A8B152CB44CCD0001DE27 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132A8B142CB44CCC0001DE27 /* Cell.swift */; };
+		132A8B192CB9A1FE0001DE27 /* DateExtantions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132A8B182CB9A1FE0001DE27 /* DateExtantions.swift */; };
+		132A8B1C2CBBD0B70001DE27 /* CalendarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132A8B1B2CBBD0B70001DE27 /* CalendarPresenter.swift */; };
+		132D48562CCA5E5300890661 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D48552CCA5E5300890661 /* CalendarModel.swift */; };
 		137983732CB1752800982E7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137983722CB1752800982E7D /* AppDelegate.swift */; };
 		137983752CB1752800982E7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137983742CB1752800982E7D /* SceneDelegate.swift */; };
-		137983772CB1752800982E7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137983762CB1752800982E7D /* ViewController.swift */; };
+		137983772CB1752800982E7D /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137983762CB1752800982E7D /* CalendarViewController.swift */; };
 		1379837A2CB1752800982E7D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 137983792CB1752800982E7D /* Base */; };
 		1379837C2CB1752D00982E7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1379837B2CB1752D00982E7D /* Assets.xcassets */; };
 		1379837F2CB1752D00982E7D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1379837E2CB1752D00982E7D /* Base */; };
@@ -38,10 +41,13 @@
 
 /* Begin PBXFileReference section */
 		132A8B142CB44CCC0001DE27 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		132A8B182CB9A1FE0001DE27 /* DateExtantions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtantions.swift; sourceTree = "<group>"; };
+		132A8B1B2CBBD0B70001DE27 /* CalendarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPresenter.swift; sourceTree = "<group>"; };
+		132D48552CCA5E5300890661 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
 		1379836F2CB1752800982E7D /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		137983722CB1752800982E7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		137983742CB1752800982E7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		137983762CB1752800982E7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		137983762CB1752800982E7D /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		137983792CB1752800982E7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1379837B2CB1752D00982E7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1379837E2CB1752D00982E7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +84,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		132A8B162CB9A0420001DE27 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				132A8B1A2CBBD0840001DE27 /* CalendarViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		132A8B172CB9A0770001DE27 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				132A8B182CB9A1FE0001DE27 /* DateExtantions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		132A8B1A2CBBD0840001DE27 /* CalendarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				137983762CB1752800982E7D /* CalendarViewController.swift */,
+				132A8B1B2CBBD0B70001DE27 /* CalendarPresenter.swift */,
+				132D48552CCA5E5300890661 /* CalendarModel.swift */,
+			);
+			path = CalendarViewController;
+			sourceTree = "<group>";
+		};
 		137983662CB1752800982E7D = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +133,10 @@
 		137983712CB1752800982E7D /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				132A8B172CB9A0770001DE27 /* Extentions */,
+				132A8B162CB9A0420001DE27 /* ViewControllers */,
 				137983722CB1752800982E7D /* AppDelegate.swift */,
 				137983742CB1752800982E7D /* SceneDelegate.swift */,
-				137983762CB1752800982E7D /* ViewController.swift */,
 				132A8B142CB44CCC0001DE27 /* Cell.swift */,
 				137983782CB1752800982E7D /* Main.storyboard */,
 				1379837B2CB1752D00982E7D /* Assets.xcassets */,
@@ -132,14 +165,26 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		13D9012F2CC7D88300764C7C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		1379836E2CB1752800982E7D /* Calendar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 137983992CB1752D00982E7D /* Build configuration list for PBXNativeTarget "Calendar" */;
 			buildPhases = (
+				13D9012F2CC7D88300764C7C /* Headers */,
 				1379836B2CB1752800982E7D /* Sources */,
 				1379836C2CB1752800982E7D /* Frameworks */,
 				1379836D2CB1752800982E7D /* Resources */,
+				13D901302CC7D8A200764C7C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -218,6 +263,8 @@
 				Base,
 			);
 			mainGroup = 137983662CB1752800982E7D;
+			packageReferences = (
+			);
 			productRefGroup = 137983702CB1752800982E7D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -256,14 +303,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13D901302CC7D8A200764C7C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint\nelse\n    echo \"warning: swiftlint command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1379836B2CB1752800982E7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				137983772CB1752800982E7D /* ViewController.swift in Sources */,
+				132D48562CCA5E5300890661 /* CalendarModel.swift in Sources */,
+				132A8B1C2CBBD0B70001DE27 /* CalendarPresenter.swift in Sources */,
+				137983772CB1752800982E7D /* CalendarViewController.swift in Sources */,
 				132A8B152CB44CCD0001DE27 /* Cell.swift in Sources */,
 				137983732CB1752800982E7D /* AppDelegate.swift in Sources */,
+				132A8B192CB9A1FE0001DE27 /* DateExtantions.swift in Sources */,
 				137983752CB1752800982E7D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +516,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 49FY3UUN9Z;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calendar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -473,6 +545,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 49FY3UUN9Z;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calendar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
